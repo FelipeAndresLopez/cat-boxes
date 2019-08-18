@@ -1,0 +1,163 @@
+/* Importamos la fuente tipográfica: Open Sans */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+/* -------------------- Variables */
+:root {
+  --green-color: #7acc2d;
+  --white-color: white;
+  --black-color: black;
+  --footer-color: #313337;
+  /* spacing */
+  --space: 10px;
+  /* font */
+  --normal: 12px;
+  /* box shadow */
+  --box: 0 0 2px 1px #e6e5e9;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: var(--normal);
+}
+
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--white-color);
+}
+
+nav img {
+  width: 30px;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+/* -------------------- Sección principal */
+.main_section {
+  padding: 15%;
+  text-align: center;
+}
+
+/* -------------------- Productos */
+
+.products {
+  background-image: url("../images/curve.png");
+  background-size: cover;
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+  height: 95px;
+}
+
+.product {
+  padding: var(--space);
+  margin-top: -240px;
+}
+
+.content {
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.img_content {
+  text-align: center;
+}
+
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: 17px;
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #5e9e22;
+}
+
+/* -------------------- Categorías */
+
+.categories {
+  padding: 10%;
+  display: flex;
+}
+
+.category {
+  padding: 20px;
+  text-align: center;
+}
+
+.category img {
+  max-height: 100px;
+}
+
+/* -------------------- Testimonios */
+
+h1.people_title {
+  text-align: center;
+}
+
+.people {
+  padding: 5%;
+  display: flex;
+}
+
+.person {
+  box-shadow: var(--box);
+  margin: var(--space);
+}
+
+.person .content {
+  background-color: var(--white-color);
+}
+
+.person .text_content {
+  padding: var(--space);
+}
+.person img {
+  width: 100%;
+}
+
+/* -------------------- Footer */
+
+footer {
+  background-color: var(--footer-color);
+  padding: 10px;
+  display: flex;
+  color: var(--white-color);
+  justify-content: space-between;
+}
