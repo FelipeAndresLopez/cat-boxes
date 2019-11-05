@@ -5,7 +5,7 @@
 :root {
   --green-color: #7acc2d;
   --white-color: white;
-  --black-color: black;
+  --black-color: #313337;
   --footer-color: #313337;
   /* spacing */
   --space: 10px;
@@ -22,7 +22,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+label {
   font-size: var(--normal);
 }
 
@@ -55,7 +56,7 @@ nav li a:hover {
 }
 
 nav img {
-  width: 30px;
+  width: 80px;
 }
 
 hr {
@@ -109,6 +110,10 @@ hr {
   background-color: #5e9e22;
 }
 
+.container img {
+  max-width: 150px;
+}
+
 /* -------------------- Categorías */
 
 .categories {
@@ -152,12 +157,42 @@ h1.people_title {
   width: 100%;
 }
 
+/* -------------------- Venta */
+.modulo_pago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images {
+  max-width: 150px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.modulo_pago input {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button {
+  margin-top: var(--space);
+}
+
 /* -------------------- Footer */
 
 footer {
   background-color: var(--footer-color);
-  padding: 10px;
   display: flex;
   color: var(--white-color);
   justify-content: space-between;
+}
+
+footer .footer_content {
+  padding: 10px;
 }

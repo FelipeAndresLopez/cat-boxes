@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <title>Brand</title>
+  </head>
+  <body>
+    <!-- Aqui empieza la barra de navegación -->
+    <nav class="fadeInDown">
+      <div>
+        <a href="index.html"> <img src="images/logo.png"/></a>
+      </div>
+      <div class="nav_options">
+        <ul>
+          <!-- <li>
+            <a href="#">FAQs</a>
+          </!-->
+          <li><a href="product.html">Producto y descripción</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Aquí acaba la barra de navegación -->
+
+    <!-- Formulario venta -->
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="modulo_pago">
+            <div class="modulo_pago_images">
+              <img src="images/box2.png" />
+            </div>
+            <h3>Producto 1</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="modulo_pago">
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=74Q9NX2UKMKGY"
+              method="post"
+            >
+              <label for="name">Nombre</label><br />
+              <input type="text" name="name" placeholder="" />
+              <br />
+
+              <label for="email">Email</label><br />
+              <input type="text" name="email" placeholder="" />
+              <br />
+
+              <label for="tel">Teléfono</label><br />
+              <input type="text" name="tel" placeholder="" />
+
+              <button class="main_button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <footer>
+      <div class="footer_content">
+        <p>Términos y condiciones</p>
+        <p>contacto@mail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

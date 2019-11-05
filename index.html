@@ -6,107 +6,94 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <title>Brand</title>
   </head>
   <body>
     <!-- Aqui empieza la barra de navegación -->
-    <nav>
+    <nav class="fadeInDown">
       <div>
-        <img src="images/logo.png" />
+        <a href="index.html"> <img src="images/logo.png"/></a>
       </div>
       <div class="nav_options">
         <ul>
-          <li>
+          <!-- <li>
             <a href="#">FAQs</a>
-          </li>
-          <li><a href="#">Producto y descripción</a></li>
+          </!-->
+          <li><a href="product.html">Producto y descripción</a></li>
         </ul>
       </div>
     </nav>
     <!-- Aquí acaba la barra de navegación -->
+    <div>
+      <div class="main_section fadeIn">
+        <h1>
+          Este es un producto increible, no se que haces viendo que lo puedes
+          tener.
+        </h1>
+      </div>
 
-    <div class="main_section">
-      <h1>
-        Este es un producto increible, no se que haces viendo que lo puedes
-        tener.
-      </h1>
-    </div>
-
-    <!-- Productos -->
-    <div class="products">
-      <div class="product">
-        <div class="content">
-          <div class="img_content">
-            <img src="./images/box1.png" />
+      <!-- Productos -->
+      <div class="products">
+        <div class="product fadeInUp">
+          <div class="content">
+            <div class="img_content">
+              <img src="./images/box1.png" />
+            </div>
+            <h1>Producto 1</h1>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+            <a href="venta.html">
+              <button href="venta.html" class="main_button">Lo quiero</button>
+            </a>
           </div>
-          <h1>Producto 1</h1>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja con
-            gatitos
-          </p>
-          <button href="#" class="main_button">Lo quiero</button>
         </div>
-      </div>
-      <div class="product">
-        <div class="content">
-          <div class="img_content">
-            <img src="./images/box2.png" />
+        <div class="product fadeInUp">
+          <div class="content">
+            <div class="img_content">
+              <img src="./images/box2.png" />
+            </div>
+            <h1>Producto 2</h1>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+            <a href="venta.html">
+              <button class="main_button">Lo quiero</button>
+            </a>
           </div>
-          <h1>Producto 1</h1>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja con
-            gatitos
-          </p>
-          <button href="#" class="main_button">Lo quiero</button>
         </div>
       </div>
-    </div>
-    <!-- Fin productos -->
+      <!-- Fin productos -->
 
-    <!-- Categorías -->
-    <div class="categories">
-      <div class="category">
-        <div class="category_content">
-          <img src="./images/b1.png" />
-          <h3>Los más suavecitos</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja con
-            gatitos
-          </p>
+      <!-- Categorías -->
+      <div class="categories">
+        <div class="category">
+          <div class="category_content">
+            <img src="./images/b1.png" />
+            <h3>Los más suavecitos</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="category">
-        <div class="category_content">
-          <img src="./images/b2.png" />
-          <h3>Los más suavecitos</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja con
-            gatitos
-          </p>
+        <div class="category">
+          <div class="category_content">
+            <img src="./images/b2.png" />
+            <h3>Los más suavecitos</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="category">
-        <div class="category_content">
-          <img src="./images/b3.png" />
-          <h3>Los más suavecitos</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja con
-            gatitos
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Fin categorias -->
-    <hr />
-
-    <!-- Testimonios -->
-    <h1 class="people_title">Testimonios</h1>
-    <div class="people">
-      <div class="person">
-        <div class="people_content">
-          <img src="images/p1.png" />
-          <div class="text_content">
-            <h3>Mario</h3>
+        <div class="category">
+          <div class="category_content">
+            <img src="./images/b3.png" />
+            <h3>Los más suavecitos</h3>
             <p>
               Miles de productos hay en el mercado, pero nada como una caja con
               gatitos
@@ -114,42 +101,61 @@
           </div>
         </div>
       </div>
+      <!-- Fin categorias -->
+      <hr />
 
-      <div class="person">
-        <div class="people_content">
-          <img src="images/p2.png" />
-          <div class="text_content">
-            <h3>Maria</h3>
-            <p>
-              Miles de productos hay en el mercado, pero nada como una caja con
-              gatitos
-            </p>
+      <!-- Testimonios -->
+      <h1 class="people_title">Testimonios</h1>
+      <div class="people">
+        <div class="person">
+          <div class="people_content">
+            <img src="images/p1.png" />
+            <div class="text_content">
+              <h3>Mario</h3>
+              <p>
+                Miles de productos hay en el mercado, pero nada como una caja
+                con gatitos
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="person">
-        <div class="people_content">
-          <img src="images/p3.png" />
-          <div class="text_content">
-            <h3>Joe</h3>
-            <p>
-              Miles de productos hay en el mercado, pero nada como una caja con
-              gatitos
-            </p>
+        <div class="person">
+          <div class="people_content">
+            <img src="images/p2.png" />
+            <div class="text_content">
+              <h3>Maria</h3>
+              <p>
+                Miles de productos hay en el mercado, pero nada como una caja
+                con gatitos
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="person">
-        <div class="people_content">
-          <img src="images/p4.png" />
 
-          <div class="text_content">
-            <h3>Jamaica</h3>
-            <p>
-              Miles de productos hay en el mercado, pero nada como una caja con
-              gatitos
-            </p>
+        <div class="person">
+          <div class="people_content">
+            <img src="images/p3.png" />
+            <div class="text_content">
+              <h3>Joe</h3>
+              <p>
+                Miles de productos hay en el mercado, pero nada como una caja
+                con gatitos
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="person">
+          <div class="people_content">
+            <img src="images/p4.png" />
+
+            <div class="text_content">
+              <h3>Jamaica</h3>
+              <p>
+                Miles de productos hay en el mercado, pero nada como una caja
+                con gatitos
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -157,9 +163,10 @@
     <!-- Fin testimonios -->
 
     <footer>
-      <p>Términos y condiciones</p>
-      <p>contacto@mail.com</p>
+      <div class="footer_content">
+        <p>Términos y condiciones</p>
+        <p>contacto@mail.com</p>
+      </div>
     </footer>
-    <script src="scripts/script.js"></script>
   </body>
 </html>
